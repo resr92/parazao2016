@@ -14,14 +14,14 @@ import com.appodeal.ads.InterstitialCallbacks;
 public class MainActivity extends AppCompatActivity {
 
     Button btclassificacao, bttabela;
+    final String appodealKey = getString(R.string.appodeal_key);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         MostrarTabela();
-        String appKey = "a94d38f00df8f97224217d7612b2ae7c373a35c0bb0e65ae";
-        Appodeal.initialize(this, appKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
+        Appodeal.initialize(this, appodealKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
         Appodeal.setTesting(false);
 
         Appodeal.show(this, Appodeal.BANNER_BOTTOM);
@@ -96,8 +96,7 @@ public class MainActivity extends AppCompatActivity {
         wv10.loadUrl("http://resr92.esy.es/goltime8.html");
 
 
-        String appKey = "a94d38f00df8f97224217d7612b2ae7c373a35c0bb0e65ae";
-        Appodeal.initialize(this, appKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
+        Appodeal.initialize(this, appodealKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
         Appodeal.setTesting(false);
         Appodeal.show(this, Appodeal.BANNER_BOTTOM);
 
@@ -132,8 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        String appKey = "a94d38f00df8f97224217d7612b2ae7c373a35c0bb0e65ae";
-        Appodeal.initialize(this, appKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
+        Appodeal.initialize(this, appodealKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
         Appodeal.setTesting(false);
 
         Appodeal.show(this, Appodeal.BANNER_BOTTOM);
