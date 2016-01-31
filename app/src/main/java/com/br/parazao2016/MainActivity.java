@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         MostrarTabela();
         String appKey = "a94d38f00df8f97224217d7612b2ae7c373a35c0bb0e65ae";
         Appodeal.initialize(this, appKey, Appodeal.INTERSTITIAL | Appodeal.BANNER);
@@ -30,22 +31,69 @@ public class MainActivity extends AppCompatActivity {
     public void MostrarTabela(){
         setContentView(R.layout.activity_main);
 
-        WebView golTapajosSR = (WebView) findViewById(R.id.golTapajosSR);
+        WebView wv3 = (WebView) findViewById(R.id.webView3);
 
-        WebSettings wsgolTapajosSR = golTapajosSR.getSettings();
-        wsgolTapajosSR.setJavaScriptEnabled(true);
-        wsgolTapajosSR.setSupportZoom(false);
+        WebSettings ws3 = wv3.getSettings();
+        ws3.setJavaScriptEnabled(true);
+        ws3.setSupportZoom(false);
 
-        golTapajosSR.loadUrl("http://resr92.esy.es/1.jpg");
+        wv3.loadUrl("http://resr92.esy.es/goltime1.html");
 
+        WebView wv4 = (WebView) findViewById(R.id.webView4);
 
-        WebView golSRTapajos = (WebView) findViewById(R.id.golSRTapajos);
+        WebSettings ws4 = wv4.getSettings();
+        ws4.setJavaScriptEnabled(true);
+        ws4.setSupportZoom(false);
 
-        WebSettings wsgolSRTapajos = golSRTapajos.getSettings();
-        wsgolSRTapajos.setJavaScriptEnabled(true);
-        wsgolSRTapajos.setSupportZoom(false);
+        wv4.loadUrl("http://resr92.esy.es/goltime2.html");
 
-        golSRTapajos.loadUrl("http://resr92.esy.es/3-1.jpg");
+        WebView wv5 = (WebView) findViewById(R.id.webView5);
+
+        WebSettings ws5 = wv5.getSettings();
+        ws5.setJavaScriptEnabled(true);
+        ws5.setSupportZoom(false);
+
+        wv5.loadUrl("http://resr92.esy.es/goltime3.html");
+
+        WebView wv6 = (WebView) findViewById(R.id.webView6);
+
+        WebSettings ws6 = wv6.getSettings();
+        ws6.setJavaScriptEnabled(true);
+        ws6.setSupportZoom(false);
+
+        wv6.loadUrl("http://resr92.esy.es/goltime4.html");
+
+        WebView wv7 = (WebView) findViewById(R.id.webView7);
+
+        WebSettings ws7 = wv7.getSettings();
+        ws7.setJavaScriptEnabled(true);
+        ws7.setSupportZoom(false);
+
+        wv7.loadUrl("http://resr92.esy.es/goltime5.html");
+
+        WebView wv8 = (WebView) findViewById(R.id.webView8);
+
+        WebSettings ws8 = wv8.getSettings();
+        ws8.setJavaScriptEnabled(true);
+        ws8.setSupportZoom(false);
+
+        wv8.loadUrl("http://resr92.esy.es/goltime6.html");
+
+        WebView wv9 = (WebView) findViewById(R.id.webView9);
+
+        WebSettings ws9 = wv9.getSettings();
+        ws9.setJavaScriptEnabled(true);
+        ws9.setSupportZoom(false);
+
+        wv9.loadUrl("http://resr92.esy.es/goltime7.html");
+
+        WebView wv10 = (WebView) findViewById(R.id.webView10);
+
+        WebSettings ws10 = wv10.getSettings();
+        ws10.setJavaScriptEnabled(true);
+        ws10.setSupportZoom(false);
+
+        wv10.loadUrl("http://resr92.esy.es/goltime8.html");
 
 
         String appKey = "a94d38f00df8f97224217d7612b2ae7c373a35c0bb0e65ae";
@@ -72,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         ws.setJavaScriptEnabled(true);
         ws.setSupportZoom(false);
 
-        wv.loadUrl("http://resr92.esy.es/tabela%20gp1mod-.png");
+        wv.loadUrl("http://resr92.esy.es/tablesorter/index.html");
 
         WebView wv2 = (WebView) findViewById(R.id.webView2);
 
@@ -80,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         ws2.setJavaScriptEnabled(true);
         ws2.setSupportZoom(false);
 
-        wv2.loadUrl("http://resr92.esy.es/Tabela%20gp2mod.png");
+        wv2.loadUrl("http://resr92.esy.es/tablesorter2/index.html");
 
 
 
